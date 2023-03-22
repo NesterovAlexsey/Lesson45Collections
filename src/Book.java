@@ -23,6 +23,11 @@ public class Book implements Comparable<Book> {
     return bookName.compareTo(other.bookName);
   }
 
+  @Override
+  public String toString() {
+    return author + ", " + bookName + ", " + numberOfPages + "page;";
+  }
+
   public String getAuthor() {
     return author;
   }
