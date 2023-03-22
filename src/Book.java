@@ -25,7 +25,7 @@ public class Book implements Comparable<Book> {
 
   @Override
   public String toString() {
-    return author + ", " + bookName + ", " + numberOfPages + "page;";
+    return author + ", " + bookName + ", " + numberOfPages + " pages;";
   }
 
   public String getAuthor() {
