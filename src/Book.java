@@ -14,7 +14,13 @@ public class Book implements Comparable<Book> {
 
   @Override
   public int compareTo(Book other) {
-    return author.compareTo(other.author);
+    if (author.compareTo(other.author) < 0) {
+      return -1;
+    }
+    if (author.compareTo(other.author) > 0) {
+      return 1;
+    }
+    return bookName.compareTo(other.bookName);
   }
 
   public String getAuthor() {
@@ -28,6 +34,4 @@ public class Book implements Comparable<Book> {
   public int getNumberOfPages() {
     return numberOfPages;
   }
-
-
 }
